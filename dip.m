@@ -1,7 +1,7 @@
 %x=[1 5 8 ; 6 3 1]
 %y=[5 6 8; 7 3 1]
 %矩阵 以列为主
-%global <-> 局部变量
+%global <-> �?��变量
 
 %%函数
 % funtion mean(x);
@@ -98,29 +98,28 @@
 % end
 
 % 
-% rgb3=imread('3.jpg');
-% I=rgb2gray(rgb3);
-% %%%%快速傅里叶变换
-% FFT=fft2(I);
-% 
-% %%%反傅里叶变换
-% IFFT=ifft2(FFT);
-% IFFT_1=fftshift(IFFT);
-% 
-% figure(1);
-% subplot(2,2,1)
-%     imshow(I);
-%     title('灰度图');
-% subplot(2,2,2)
-%     imshow(FFT); 
-%      title('FFT');
-% subplot(2,2,3)
-%     imshow(fftshift(log(1+abs(FFT))),[]);
-%      title('Abs+log&shift');
-% subplot(2,2,4)
-%     imshow(uint8(IFFT));
-%      title('ifft');
-%%uint8()汉字编码格式问题
+rgb3=imread('3.jpg');
+I=rgb2gray(rgb3);
+%%%%快�?傅里叶变�?% FFT=fft2(I);
+
+%%%反傅里叶变换
+IFFT=ifft2(FFT);
+IFFT_1=fftshift(IFFT);
+
+figure(1);
+subplot(2,2,1)
+    imshow(I);
+    title('灰度�?);
+subplot(2,2,2)
+    imshow(FFT); 
+     title('FFT');
+subplot(2,2,3)
+    imshow(fftshift(log(1+abs(FFT))),[]);
+     title('Abs+log&shift');
+subplot(2,2,4)
+    imshow(uint8(IFFT));
+     title('ifft');
+%uint8()汉字编码格式问题
 
 
 %%彩色m*n*3矩阵 RGB
@@ -144,7 +143,7 @@
 
 
 
-%%%%%%边缘检测 edge detection
+%%%%%%边缘�?�� edge detection
 % %Roberts算子
 % I0=imread('3.jpg');
 % Ibw=im2bw(I0);
@@ -191,28 +190,20 @@
 %     title('黑白取反');
 
 
-%%%%%%%%%%%%直方图修正 线性变换 灰度变换  g(x,y)=c+k[f(x,y)-a]
+%%%%%%%%%%%%直方图修�?线�?变换 灰度变换  g(x,y)=c+k[f(x,y)-a]
 
-%%%%%%分段线性变换
+%%%%%%分段线�?变换
 %%%%%%%%%%对数变换g(x,y)=lamnbda log[1+f(x,y)]
-%%%%%%可对图像的低灰度区较大的拉伸而对高灰度区压缩；
-%%%%%%%采用这种变换,使图像灰度分布与人的视觉特性相匹配
-
+%%%%%%可对图像的低灰度区较大的拉伸而对高灰度区压缩�?%%%%%%%采用这种变换,使图像灰度分布与人的视觉特�?相匹�?
 %%%%%%%%%%指数变换g(x,y)=lamnbda log[epsilon+f(x,y)]^gama
-%%%%%%%%%能对图像的高灰度区给予较大的拉伸。
-
+%%%%%%%%%能对图像的高灰度区给予较大的拉伸�?
 
 
 %%%%%%%%%%%直方图均衡化
-%%%列出图像灰度级
-%%%统计原图像各灰度级像素个数ni
-%%%计算原始直方图
-%%%计算累计直方图
-%%%计算变换后的灰度值
-%%%确认灰度变换关系
+%%%列出图像灰度�?%%%统计原图像各灰度级像素个数ni
+%%%计算原始直方�?%%%计算累计直方�?%%%计算变换后的灰度�?%%%确认灰度变换关系
 %%%统计变换后各灰度级的像素个数n_j
-%%%计算变换后图像的直方图
-
+%%%计算变换后图像的直方�?
 
 %%%%%%%%%%%%%%%%%%%%%
 %%GLG
