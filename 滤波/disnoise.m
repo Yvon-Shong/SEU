@@ -44,7 +44,7 @@ for i=1:a
         disnoise_2(i,j)=h*disnoise_2(i,j);
     end;
 end;
-IFFT_2=uint8(real(ifft2(ifftshift(disnoise_2))));
+IFFT_2=uint8((ifft2(ifftshift(disnoise_2))));
 
 
 %%%%%%%% ButterworthÂË²¨Æ÷
@@ -59,7 +59,7 @@ for i=1:a
         disnoise_3(i,j)=h*disnoise_3(i,j);
     end;
 end;
-IFFT_3=uint8(real(ifft2(ifftshift(disnoise_3))));
+IFFT_3=uint8((ifft2(ifftshift(disnoise_3))));
 
 
 %%%%%%%% Ö¸ÊýÂË²¨Æ÷
@@ -74,7 +74,7 @@ for i=1:a
         disnoise_4(i,j)=h*disnoise_4(i,j);
     end;
 end;
-IFFT_4=uint8(real(ifft2(ifftshift(disnoise_4))));
+IFFT_4=uint8((ifft2(ifftshift(disnoise_4))));
 
 
 
@@ -91,7 +91,7 @@ for i=1:a
         disnoise_5(i,j)=h*disnoise_5(i,j);
     end;
 end;
-IFFT_5=uint8(real(ifft2(ifftshift(disnoise_5))));
+IFFT_5=uint8(ifft2(ifftshift(disnoise_5)));
 
 
 
@@ -115,7 +115,7 @@ for i=1:a
         disnoise_6(i,j)=h*disnoise_6(i,j);
     end;
 end;
-IFFT_6=uint8(real(ifft2(ifftshift(disnoise_6))));
+IFFT_6=uint8(ifft2(ifftshift(disnoise_6)));
 
 
 
